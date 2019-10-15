@@ -1,0 +1,7 @@
+D:\dev\c#\projects\BenchPro\BenchPro\bin\Debug\BenchPro.exe
+D:\dev\c#\projects\BenchPro\BenchPro\bin\Debug\BenchPro.pdb
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Debug\BenchPro.csprojResolveAssemblyReference.cache
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Debug\BenchPro.Properties.Resources.resources
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Debug\BenchPro.csproj.GenerateResource.Cache
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Debug\BenchPro.exe
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Debug\BenchPro.pdb

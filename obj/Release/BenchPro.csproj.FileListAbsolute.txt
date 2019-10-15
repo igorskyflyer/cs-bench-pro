@@ -1,0 +1,11 @@
+D:\dev\c#\projects\BenchPro\BenchPro\bin\Release\BenchPro.exe
+D:\dev\c#\projects\BenchPro\BenchPro\bin\Release\BenchPro.pdb
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.Properties.Resources.resources
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.csproj.GenerateResource.Cache
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.exe
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.pdb
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.UI.resources
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.csprojResolveAssemblyReference.cache
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.Author.resources
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.Dialog.resources
+D:\dev\c#\projects\BenchPro\BenchPro\obj\Release\BenchPro.Loading.resources

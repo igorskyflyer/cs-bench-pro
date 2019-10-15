@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3DACD72-59B4-4903-B423-6019F4F2D818}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BenchPro</RootNamespace>
+    <AssemblyName>BenchPro</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Author.Designer.cs">
+      <DependentUpon>Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI.Designer.cs">
+      <DependentUpon>UI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Author.resx">
+      <DependentUpon>Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI.resx">
+      <DependentUpon>UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.ico" />
+    <Content Include="resources\close.png" />
+    <None Include="resources\memory.png" />
+    <None Include="resources\battery.png" />
+    <None Include="resources\main.png" />
+    <None Include="resources\close-dialog.png" />
+    <None Include="resources\theme-aqua.png" />
+    <None Include="resources\theme-gray.png" />
+    <None Include="resources\theme-black.png" />
+    <None Include="resources\apply-disabled.png" />
+    <None Include="resources\apply.png" />
+    <None Include="resources\cancel.png" />
+    <None Include="resources\igor.png" />
+    <None Include="resources\progress\progress-100.png" />
+    <None Include="resources\progress\progress-99.png" />
+    <None Include="resources\progress\progress-98.png" />
+    <None Include="resources\progress\progress-97.png" />
+    <None Include="resources\progress\progress-96.png" />
+    <None Include="resources\progress\progress-95.png" />
+    <None Include="resources\progress\progress-94.png" />
+    <None Include="resources\progress\progress-93.png" />
+    <None Include="resources\progress\progress-92.png" />
+    <None Include="resources\progress\progress-91.png" />
+    <None Include="resources\progress\progress-90.png" />
+    <None Include="resources\progress\progress-89.png" />
+    <None Include="resources\progress\progress-88.png" />
+    <None Include="resources\progress\progress-87.png" />
+    <None Include="resources\progress\progress-86.png" />
+    <None Include="resources\progress\progress-85.png" />
+    <None Include="resources\progress\progress-84.png" />
+    <None Include="resources\progress\progress-83.png" />
+    <None Include="resources\progress\progress-82.png" />
+    <None Include="resources\progress\progress-81.png" />
+    <None Include="resources\progress\progress-80.png" />
+    <None Include="resources\progress\progress-79.png" />
+    <None Include="resources\progress\progress-78.png" />
+    <None Include="resources\progress\progress-77.png" />
+    <None Include="resources\progress\progress-76.png" />
+    <None Include="resources\progress\progress-75.png" />
+    <None Include="resources\progress\progress-74.png" />
+    <None Include="resources\progress\progress-73.png" />
+    <None Include="resources\progress\progress-72.png" />
+    <None Include="resources\progress\progress-71.png" />
+    <None Include="resources\progress\progress-70.png" />
+    <None Include="resources\progress\progress-69.png" />
+    <None Include="resources\progress\progress-68.png" />
+    <None Include="resources\progress\progress-67.png" />
+    <None Include="resources\progress\progress-66.png" />
+    <None Include="resources\progress\progress-65.png" />
+    <None Include="resources\progress\progress-64.png" />
+    <None Include="resources\progress\progress-63.png" />
+    <None Include="resources\progress\progress-62.png" />
+    <None Include="resources\progress\progress-61.png" />
+    <None Include="resources\progress\progress-60.png" />
+    <None Include="resources\progress\progress-59.png" />
+    <None Include="resources\progress\progress-58.png" />
+    <None Include="resources\progress\progress-56.png" />
+    <None Include="resources\progress\progress-55.png" />
+    <None Include="resources\progress\progress-54.png" />
+    <None Include="resources\progress\progress-53.png" />
+    <None Include="resources\progress\progress-52.png" />
+    <None Include="resources\progress\progress-51.png" />
+    <None Include="resources\progress\progress-50.png" />
+    <None Include="resources\progress\progress-49.png" />
+    <None Include="resources\progress\progress-48.png" />
+    <None Include="resources\progress\progress-47.png" />
+    <None Include="resources\progress\progress-46.png" />
+    <None Include="resources\progress\progress-45.png" />
+    <None Include="resources\progress\progress-44.png" />
+    <None Include="resources\progress\progress-43.png" />
+    <None Include="resources\progress\progress-42.png" />
+    <None Include="resources\progress\progress-41.png" />
+    <None Include="resources\progress\progress-40.png" />
+    <None Include="resources\progress\progress-39.png" />
+    <None Include="resources\progress\progress-38.png" />
+    <None Include="resources\progress\progress-37.png" />
+    <None Include="resources\progress\progress-36.png" />
+    <None Include="resources\progress\progress-35.png" />
+    <None Include="resources\progress\progress-34.png" />
+    <None Include="resources\progress\progress-33.png" />
+    <None Include="resources\progress\progress-32.png" />
+    <None Include="resources\progress\progress-31.png" />
+    <None Include="resources\progress\progress-30.png" />
+    <None Include="resources\progress\progress-29.png" />
+    <None Include="resources\progress\progress-28.png" />
+    <None Include="resources\progress\progress-27.png" />
+    <None Include="resources\progress\progress-26.png" />
+    <None Include="resources\progress\progress-25.png" />
+    <None Include="resources\progress\progress-24.png" />
+    <None Include="resources\progress\progress-23.png" />
+    <None Include="resources\progress\progress-22.png" />
+    <None Include="resources\progress\progress-21.png" />
+    <None Include="resources\progress\progress-20.png" />
+    <None Include="resources\progress\progress-19.png" />
+    <None Include="resources\progress\progress-18.png" />
+    <None Include="resources\progress\progress-17.png" />
+    <None Include="resources\progress\progress-16.png" />
+    <None Include="resources\progress\progress-15.png" />
+    <None Include="resources\progress\progress-14.png" />
+    <None Include="resources\progress\progress-13.png" />
+    <None Include="resources\progress\progress-12.png" />
+    <None Include="resources\progress\progress-11.png" />
+    <None Include="resources\progress\progress-10.png" />
+    <None Include="resources\progress\progress-9.png" />
+    <None Include="resources\progress\progress-8.png" />
+    <None Include="resources\progress\progress-7.png" />
+    <None Include="resources\progress\progress-6.png" />
+    <None Include="resources\progress\progress-5.png" />
+    <None Include="resources\progress\progress-4.png" />
+    <None Include="resources\progress\progress-3.png" />
+    <None Include="resources\progress\progress-2.png" />
+    <None Include="resources\progress\progress-1.png" />
+    <None Include="resources\run-button.png" />
+    <None Include="resources\run-button-active.png" />
+    <None Include="resources\skin-default.png" />
+    <None Include="resources\skin-active.png" />
+    <None Include="resources\theme-blue.png" />
+    <None Include="resources\theme-green.png" />
+    <None Include="resources\theme-purple.png" />
+    <None Include="resources\minimize.png" />
+    <None Include="resources\button.png" />
+    <None Include="resources\maximize.png" />
+    <None Include="resources\function.png" />
+    <None Include="resources\author.png" />
+    <None Include="resources\theme-red.png" />
+    <None Include="resources\theme.png" />
+    <None Include="resources\app-icon.png" />
+    <None Include="resources\design.jpg" />
+    <None Include="resources\exit.png" />
+    <None Include="resources\pi.png" />
+    <None Include="resources\math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
