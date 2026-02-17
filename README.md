@@ -12,7 +12,7 @@
 <br>
 <br>
 
-## 📃 Table of Contents
+## Table of Contents
 
 - 🎯 [**Motivation**](#motivation)
 - ✨ [**Features**](#features)
