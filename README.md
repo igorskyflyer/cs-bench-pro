@@ -27,9 +27,7 @@
 <br>
 
 ## Motivation
-In *March 2014*, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, Igor chose to engineer a solution.  
-
-**BenchPro** was designed to bridge the gap between abstract architectural theory and physical silicon performance. It bypasses standard .NET abstractions to query the hardware directly, serving as a practical exploration of thread management, **WMI** (Windows Management Instrumentation) telemetry, and custom UI rendering.
+In *March 2014*, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, **Igor chose to engineer a functional solution independently.** Driven by an interest in low-level systems, he developed the utility without prior specialized knowledge or instructional guidance, bypassing standard .NET abstractions to query hardware directly. **BenchPro** serves as a result of that exploration into thread management, **WMI** telemetry, and custom Win32 UI rendering—proving that physical silicon performance could be mastered through self-directed research.
 
 <br>
 
