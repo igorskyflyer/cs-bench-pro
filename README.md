@@ -73,7 +73,7 @@ The stress tests run on a background worker thread to prevent UI freezing. The *
 ## Demo
 <div align="center">
   <figure>
-    <img src="https://raw.githubusercontent.com/igorskyflyer/cs-bench-pro/main/media/screenshot.png" alt="Icon of BenchPro" width="256" height="256">
+    <img src="https://raw.githubusercontent.com/igorskyflyer/cs-bench-pro/main/media/screenshot.png" alt="Icon of BenchPro" width="699" height="492">
     <br>
    <figcaption>
     <strong>Figure 1.</strong> <em>A screenshot of BenchPro's user interface</em>
