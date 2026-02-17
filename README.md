@@ -14,22 +14,15 @@
 
 ## Table of Contents
 
-- 🎯 [**Motivation**](#motivation)
 - ✨ [**Features**](#features)
-- ⚙️ [**Implementation**](#implementation)
 - 🕵🏼 [**Usage**](#usage)
 - 📸 [**Demo**](#demo)
+- ⚙️ [**Implementation**](#implementation)
+- 🎯 [**Motivation**](#motivation)
 - 📝 [**Changelog**](#changelog)
 - 🪪 [**License**](#license)
 - 💖 [**Support**](#support)
 - 👨🏻‍💻 [**Author**](#author)
-
-<br>
-
-## Motivation
-In *March 2014*, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, **Igor chose to engineer a functional solution independently.**  
-
-Driven by an interest in low-level systems, he developed the utility without prior specialized knowledge or instructional guidance, bypassing standard .NET abstractions to query hardware directly. **BenchPro** serves as a result of that exploration into thread management, **WMI** telemetry, and custom Win32 UI rendering, proving that physical silicon performance could be mastered through self-directed research.
 
 <br>
 
@@ -42,20 +35,6 @@ Driven by an interest in low-level systems, he developed the utility without pri
 - **Proprietary UI Engine**: Features a completely frameless window architecture with custom drag-and-drop logic (`WM_NCHITTEST`), bypassing the standard Windows chrome.
 - **Dynamic Theming**: Includes a custom skin engine with 7 color variations (`Blue`, `Green`, `Red`, `Purple`, `Black`, `Gray`, `Aqua`).
 - **Data Export**: Supports saving benchmark results as raw text logs (`.txt`) or rendering the results visualizer to an image (`.bmp`, `.jpg`, `.png`).
-
-<br>
-
-## Implementation
-The core architecture relies heavily on **Win32 Interop** to escape the managed sandbox of the .NET Framework 2.0/4.0.
-
-### 1. The Interop Core
-To achieve a frameless yet movable window, the application overrides the `WndProc` method to intercept Windows messages. It handles `WM_NCHITTEST` (0x84) manually, tricking the OS into treating the client area as a caption bar for dragging purposes.
-
-### 2. Hardware Telemetry
-Instead of relying on basic Environment variables, the application queries the `ManagementObjectSearcher` to pull low-level processor specifications directly from the WMI provider.
-
-### 3. Asynchronous Benchmarking
-The stress tests run on a background worker thread to prevent UI freezing. The **Monte Carlo** method generates random coordinate pairs `$(x, y)$` to determine points within a unit circle, using the ratio of success to total throws to approximate `Pi`.
 
 <br>
 
@@ -80,6 +59,27 @@ The stress tests run on a background worker thread to prevent UI freezing. The *
     <strong>Figure 1.</strong> <em>A screenshot of BenchPro's user interface</em>
    </figcaption>
 </div>
+
+<br>
+
+## Implementation
+The core architecture relies heavily on **Win32 Interop** to escape the managed sandbox of the .NET Framework 2.0/4.0.
+
+### 1. The Interop Core
+To achieve a frameless yet movable window, the application overrides the `WndProc` method to intercept Windows messages. It handles `WM_NCHITTEST` (0x84) manually, tricking the OS into treating the client area as a caption bar for dragging purposes.
+
+### 2. Hardware Telemetry
+Instead of relying on basic Environment variables, the application queries the `ManagementObjectSearcher` to pull low-level processor specifications directly from the WMI provider.
+
+### 3. Asynchronous Benchmarking
+The stress tests run on a background worker thread to prevent UI freezing. The **Monte Carlo** method generates random coordinate pairs `$(x, y)$` to determine points within a unit circle, using the ratio of success to total throws to approximate `Pi`.
+
+<br>
+
+## Motivation
+In *March 2014*, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, **Igor chose to engineer a functional solution independently.**  
+
+Driven by an interest in low-level systems, he developed the utility without prior specialized knowledge or instructional guidance, bypassing standard .NET abstractions to query hardware directly. **BenchPro** serves as a result of that exploration into thread management, **WMI** telemetry, and custom Win32 UI rendering, proving that physical silicon performance could be mastered through self-directed research.
 
 <br>
 
