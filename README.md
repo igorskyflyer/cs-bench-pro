@@ -18,6 +18,7 @@
 - 🤖 [**Features**](#features)
 - ⚙️ [**Implementation**](#implementation)
 - 🕵🏼 [**Usage**](#usage)
+- 📸 [**Demo**](#demo)
 - 📝 [**Changelog**](#changelog)
 - 🪪 [**License**](#license)
 - 💖 [**Support**](#support)
