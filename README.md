@@ -93,17 +93,17 @@ Licensed under the [**GPL-3.0 license**](https://github.com/igorskyflyer/cs-benc
 
 <br>
 
-## Support
+## 💖 Support
 <div align="center">
-  I work hard for every project, including this one and your support means a lot to me!
+  Engineering and documenting open-source projects involves a significant investment of time. 
   <br>
-  Consider buying me a coffee. ☕
+  If this project or its implementation has provided value, support is greatly appreciated.
   <br>
   <br>
   <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
   <br>
   <br>
-  <em>Thank you for supporting my efforts!</em> 🙏😊
+  <em>Thank you for supporting these efforts!</em> 🙏😊
 </div>
 
 <br>
