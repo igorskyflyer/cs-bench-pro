@@ -26,6 +26,7 @@
 <br>
 
 ## Features
+
 - **Dual-Mode Stress Testing**: Implements two distinct algorithms to saturate CPU cycles:
     - **Floating Point Operations**: Heavy arithmetic stress testing (`+`, `-`, `*`, `/`, `Math.Pow`, `Math.Log`).
     - **Monte Carlo Simulation**: A stochastic method for estimating `π (Pi)` to measure raw computational throughput.
@@ -38,6 +39,7 @@
 <br>
 
 ## Usage
+
 1. **Launch** the executable (`BenchPro.exe`).
 2. **Select Method**: Choose between **Monte Carlo** or **Floating Point**.
 3. **Configure**: Set the number of iterations.
@@ -50,6 +52,7 @@
 <br>
 
 ## Demo
+
 <div align="center">
   <figure>
     <img src="https://raw.githubusercontent.com/igorskyflyer/cs-bench-pro/main/media/screenshot.png" alt="Icon of BenchPro" width="699" height="492">
@@ -63,20 +66,25 @@
 <br>
 
 ## Implementation
+
 The core architecture relies heavily on **Win32 Interop** to escape the managed sandbox of the .NET Framework 2.0/4.0.
 
 ### 1. The Interop Core
+
 To achieve a frameless yet movable window, the application overrides the `WndProc` method to intercept Windows messages. It handles `WM_NCHITTEST` (0x84) manually, tricking the OS into treating the client area as a caption bar for dragging purposes.
 
 ### 2. Hardware Telemetry
+
 Instead of relying on basic Environment variables, the application queries the `ManagementObjectSearcher` to pull low-level processor specifications directly from the WMI provider.
 
 ### 3. Asynchronous Benchmarking
+
 The stress tests run on a background worker thread to prevent UI freezing. The **Monte Carlo** method generates random coordinate pairs `$(x, y)$` to determine points within a unit circle, using the ratio of success to total throws to approximate `Pi`.
 
 <br>
 
 ## Motivation
+
 In *March 2014*, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, **Igor chose to engineer a functional solution independently.**  
 
 Driven by an interest in low-level systems, he developed the utility without prior specialized knowledge or instructional guidance, bypassing standard .NET abstractions to query hardware directly. **BenchPro** serves as a result of that exploration into thread management, **WMI** telemetry, and custom Win32 UI rendering, proving that physical silicon performance could be mastered through self-directed research.
@@ -84,16 +92,19 @@ Driven by an interest in low-level systems, he developed the utility without pri
 <br>
 
 ## Changelog
+
 Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/cs-bench-pro/blob/main/CHANGELOG.md).
 
 <br>
 
 ## License
+
 Licensed under the [**GPL-3.0 license**](https://github.com/igorskyflyer/cs-bench-pro/blob/main/LICENSE).
 
 <br>
 
 ## 💖 Support
+
 <div align="center">
   Engineering and documenting open-source projects involves a significant investment of time. 
   <br>
@@ -109,4 +120,5 @@ Licensed under the [**GPL-3.0 license**](https://github.com/igorskyflyer/cs-benc
 <br>
 
 ## Author
+
 Created by **Igor Dimitrijević ([*@igorskyflyer*](https://github.com/igorskyflyer/))**.
