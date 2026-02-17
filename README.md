@@ -26,15 +26,13 @@
 <br>
 
 ## Motivation
-
-In March 2014, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, Igor chose to engineer a solution.
+In *March 2014*, during a **Computer Architecture** course, the professor offered an alternative to the standard theoretical exam: develop a functional benchmarking utility from scratch. While the majority of the cohort opted for the written test, Igor chose to engineer a solution.  
 
 **BenchPro** was designed to bridge the gap between abstract architectural theory and physical silicon performance. It bypasses standard .NET abstractions to query the hardware directly, serving as a practical exploration of thread management, **WMI** (Windows Management Instrumentation) telemetry, and custom UI rendering.
 
 <br>
 
 ## Features
-
 - **Dual-Mode Stress Testing**: Implements two distinct algorithms to saturate CPU cycles:
     - **Floating Point Operations**: Heavy arithmetic stress testing (`+`, `-`, `*`, `/`, `Math.Pow`, `Math.Log`).
     - **Monte Carlo Simulation**: A stochastic method for estimating `π (Pi)` to measure raw computational throughput.
@@ -47,7 +45,6 @@ In March 2014, during a **Computer Architecture** course, the professor offered 
 <br>
 
 ## Implementation
-
 The core architecture relies heavily on **Win32 Interop** to escape the managed sandbox of the .NET Framework 2.0/4.0.
 
 ### 1. The Interop Core
@@ -62,32 +59,40 @@ The stress tests run on a background worker thread to prevent UI freezing. The *
 <br>
 
 ## Usage
-
 1. **Launch** the executable (`BenchPro.exe`).
 2. **Select Method**: Choose between **Monte Carlo** or **Floating Point**.
 3. **Configure**: Set the number of iterations.
 4. **Run**: Click the "Start" button to begin the stress test.
 5. **Analyze**: View real-time progress and final execution time (in ms).
-6. **Export**: Use `File > Save` to export the data.
+6. **Export**: Use `File > Save` to export the data.  
 
 *Note: You can change the theme via the "Skin" icon in the UI or by pressing `Ctrl + T`.*
 
 <br>
 
-## Changelog
+## Demo
+<div align="center">
+  <figure>
+    <img src="https://raw.githubusercontent.com/igorskyflyer/cs-bench-pro/main/media/screenshot.png" alt="Icon of BenchPro" width="256" height="256">
+    <br>
+   <figcaption>
+    <strong>Figure 1.</strong> <em>A screenshot of BenchPro's user interface</em>
+   </figcaption>
+</div>
 
+<br>
+
+## Changelog
 Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/cs-bench-pro/blob/main/CHANGELOG.md).
 
 <br>
 
 ## License
-
 Licensed under the [**GPL-3.0 license**](https://github.com/igorskyflyer/cs-bench-pro/blob/main/LICENSE).
 
 <br>
 
 ## Support
-
 <div align="center">
   I work hard for every project, including this one and your support means a lot to me!
   <br>
