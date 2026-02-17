@@ -15,7 +15,7 @@
 ## 📃 Table of Contents
 
 - 🎯 [**Motivation**](#motivation)
-- 🤖 [**Features**](#features)
+- ✨ [**Features**](#features)
 - ⚙️ [**Implementation**](#implementation)
 - 🕵🏼 [**Usage**](#usage)
 - 📸 [**Demo**](#demo)
