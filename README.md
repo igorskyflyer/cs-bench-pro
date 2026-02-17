@@ -103,7 +103,7 @@ Licensed under the [**GPL-3.0 license**](https://github.com/igorskyflyer/cs-benc
 
 <br>
 
-## 💖 Support
+## Support
 
 <div align="center">
   Engineering and documenting open-source projects involves a significant investment of time. 
